@@ -1,0 +1,717 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    /* width: 100%;
+    height: 100%; */
+   
+}
+
+#first{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    width: 100vw;
+    height: 100vh;
+}
+
+#wish{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 10vh;
+    width: 95vw;
+    height: 40vh;
+    /* background-color: #000; */
+}
+
+#cimg{
+    width: 50vw;
+    height: 100%;
+    background-image: url("hand.jpg");
+    background-position: center;
+    background-size: contain;
+    border-radius: 50px;
+    /* background-color: black; */
+}
+
+#limg,#rimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 100%;
+    color: #fff;
+    background-color: black;
+    font-family: "Showcard Gothic";
+    font-size: 22px;
+    border-radius: 50px;
+}
+
+#limg{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#rimg{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#box{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 10vh;
+    width: 100vw;
+    height: 30vh;
+    /* background-color: rgb(230, 50, 50); */
+}
+
+.minbox{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    width: 20vw;
+    height: 35vh;
+    border-radius: 50px;
+    background-color: #000;
+}
+
+#box h1{
+    font-family: "Showcard Gothic";
+    text-decoration: wavy;
+    color: #fff;
+    font-size: 64px;
+    opacity: 1;
+}
+
+.minbox:hover{
+    cursor: pointer;
+    animation: mymove 6s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+#minbox1:hover{
+    cursor: pointer;
+    animation: mymove 6s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#minbox2:hover{
+    cursor: pointer;
+    animation: mymove1 6s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#minbox3:hover{
+    cursor: pointer; 
+    animation: mymove2 6s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#minbox4:hover{
+    cursor: pointer; 
+    animation: mymove3 6s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1); 
+}
+
+@keyframes mymove {
+    from {background-image: none;}
+    to {background-image: url(fimg1.jpg);}
+
+}
+
+@keyframes mymove1 {
+    from {background-image: none;}
+    to {background-image: url(fimg2.jpg);}
+
+}
+
+@keyframes mymove2 {
+    from {background-image: none;}
+    to {background-image: url(fimg3.jpg);}
+
+}
+
+@keyframes mymove3 {
+    from {background-image: none;}
+    to {background-image: url(fimg4.jpg);}
+
+}
+
+.minbox:hover h1{
+    animation: myex 9s;
+}
+
+@keyframes myex {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+#second{
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: palevioletred;
+}
+
+#snav{
+    width: 100vw;
+    height: 10%;
+    /* background-color: #000; */
+}
+
+#snavtext{
+    width: 100%;
+    height: 100%;
+    /* color: #fff; */
+    font-family: "Comic Sans MS";
+    text-align: center;
+    font-size: 32px;
+}
+
+#simgs{
+    width: 100vw;
+    height: 90%;
+    /* background-color: black; */
+}
+
+#simg1,#simg2,#simg3,#simg4,#simg5{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #000;
+}
+
+#simg1{
+    top: 15%;
+    left: 5%;
+    width: 35%;
+    height: 45%;
+    /* background-color: rebeccapurple; */
+    background-image: url(simg1.jpg);
+}
+
+#simg2{
+    top: 15%;
+    right: 5%;
+    width: 25%;
+    height: 80%;
+    background-color: burlywood;
+    background-image: url(simg2.jpg);
+  
+}
+
+ #simg3{
+    top: 65%;
+    left: 5%;
+    width: 35%;
+    height: 30%;
+    background-color: gold;
+    background-image: url(simg3.jpg);
+
+}
+
+#simg4{
+    top: 15%;
+    right: 32%;
+    width: 25%;
+    height: 25%;
+    background-color: rebeccapurple;
+    background-image: url(simg4.jpg);
+} 
+
+#simg5{
+    top: 45%;
+    right: 32%;
+    width: 25%;
+    height: 50%;
+    background-color: rebeccapurple;
+    background-image: url(simg5.jpg);
+    background-size: cover;
+} 
+
+#third{
+    position: absolute;
+    top: 200vh;
+    width: 100vw;
+    height: 100vh;
+    /* width: 100%;
+    height: 100%; */
+    background-color: greenyellow;
+}
+
+#tnav{
+    width: 100vw;
+    height: 20%;
+    /* background-color: #fff; */
+}
+
+#tnavtext{
+    width: 100%;
+    height: 100%;
+    /* color: #fff; */
+    font-family: "Comic Sans MS";
+    text-align: center;
+    font-size: 32px;
+}
+
+#timgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 85%;
+    /* background-color: black; */
+}
+
+#vid1,#vid2,#vid3{
+    width: 323px;
+    height: 80%;
+    /* background-color: red; */
+    border: 5px double black;
+}
+
+#vid2{
+    background-image: url(tcenter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#fourth{
+    position: absolute;
+    top: 300vh;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: greenyellow; */
+    background-color: rgb(241, 88, 33);
+    background-color: rgb(189, 2, 2);
+}
+
+#fnav{
+    width: 100vw;
+    height: 10%;
+     /* background-color: #fff;  */
+}
+
+#fnavtext{
+    width: 100%;
+    height: 100%;
+    /* color: #fff; */
+    font-family: "Comic Sans MS";
+    text-align: center;
+    font-size: 32px;
+}
+
+#fimgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 90%;
+    /* background-color: black; */
+}
+
+.fimg{
+    width: 17vw;
+    height: 65%;
+    background-color: lawngreen;
+     position: relative;
+     border: 5px solid #000;
+     background-position: center;
+     background-size: cover;
+    transition-property: width height;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-delay: 0s;  
+}
+
+.fimg:hover{
+    width: 20vw;
+    height: 80%;
+}
+
+#fimg1{
+    background-image: url(fourthimg1.jpg);
+}
+
+#fimg2{
+    background-image: url(fourthimg2.jpg);
+    
+}
+
+#fimg3{
+    background-image: url(fourthimg3.jpg);
+}
+
+#fimg4{
+    background-image: url(fourthimg4.jpg);
+}
+
+#fifth{
+    position: absolute;
+    top: 400vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: gold;
+}
+
+#fifthnav{
+    width: 100vw;
+    height: 20%;
+    /* background-color: #fff;  */
+}
+
+#fifthnavtext{
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    font-size: 30px;
+} 
+
+#fifthimgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 80%;
+    /* background-color: black; */
+}
+
+.fifthimg{
+    width: 17vw;
+    height: 65%;
+    background-color: lawngreen;
+     position: relative;
+     border: 5px solid #000;
+     background-position: center;
+     background-size: cover;
+    transition-property: width height;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-delay: 0s;
+}
+
+.fifthimg:hover{
+    width: 20vw;
+    height: 80%;
+}
+
+#fifthimg1{
+    background-image: url(fifth1.jpg);
+}
+
+#fifthimg2{
+    background-image: url(fifth2.jpg);
+}
+
+#fifthimg3{
+    background-image: url(fifth3.jpg);
+}
+
+#fifthimg4{
+    background-image: url(fifth4.jpg);
+}
+
+#sixth{
+    position: absolute;
+    top: 500vh;
+    width: 100vw;
+    height: 220vh;
+    /* background-color: gold; */
+    background-color: rgb(217, 119, 217);
+    background-color: rgb(248, 146, 58);
+    background-color: plum;
+    /* background-color: pink; */
+}
+
+#sixthnav{
+    width: 100vw;
+    height: 20%;
+    /* background-color: #fff;  */
+}
+
+#sixthnavtext{
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    font-size: 44px;
+} 
+
+#sixthimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    height: 100%;
+    /* background-color: lawngreen; */
+}
+
+#sixtext{
+    width: 90vw;
+    height: 90%;
+    /* background-color: #000; */
+    /* color: #fff; */
+    font-family: "Ink Free Regular";
+    /* font-family: "Chiller Regular"; */
+    font-size: 24px;
+    line-height: 40px;
+}
+
+#sixthfooter{
+    position: absolute;
+    width: 100vw;
+    height: 5%;
+    bottom: 0;
+    /* background-color: rosybrown; */
+    font-family: "Ink Free Regular";
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    #first{
+        height: 170vh;
+    }
+    #wish{
+        flex-direction: column;
+        top: 2vh;
+        width: 100vw;
+        height: 60vh;
+        /* background-color: blue; */
+    }
+    #limg,#rimg{
+        font-size: 14px;
+        width: 90vw;
+        height: 30%;
+    }
+    #cimg{
+        width: 90vw;
+        height: 30%;
+        border-radius: 40px;
+    }
+
+    #box{
+        /* background-color: goldenrod; */
+        flex-direction: column;
+        bottom: 5vh;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .minbox{
+        width: 90vw;
+        height: 24vh;
+         /* background-size: contain; */
+         background-size: 230px;
+         background-repeat: no-repeat;
+    
+    }
+
+    #second{
+        top: 170vh;
+        height: 160vh;
+    }
+
+    #snav{
+        /* background-color: black; */
+    }
+
+    #snavtext{
+        font-size: 13px;
+        /* color: white; */
+    }
+
+    #simg1{
+        top: 10%;
+        width: 90%;
+        height: 20%;
+    }
+
+    #simg2{
+        top: 32%;
+        width: 40%;
+        height: 25%;
+    }
+    
+    #simg3{
+        top: 59%;
+        width: 90%;
+        height: 12%;
+    }
+
+    #simg4{
+        top: 72%;
+        left: 5%;
+        width: 90%;
+        height: 14%;
+    }
+
+    #simg5{
+        left: 5%;
+        width: 45%;
+        top: 32%;
+        height: 25%;
+    }
+
+    #third{
+        top: 320vh;
+        height: 210vh;
+    }
+
+    #tnav{
+        /* background-color: red; */
+        height: 7%;
+    }
+
+    #tnavtext{
+        font-size: 13px;
+    }
+
+    #timgs{
+        position: absolute;
+        top: 8%;
+        height: 91%;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: darkmagenta;   */
+    }
+
+    #vid1 video,#vid3 video{
+        width: 260px;
+    }
+
+    #vid1,#vid3,#vid2 {
+        width: 270px;
+        height: 50%;
+        background-color: palegreen;
+        /* border: none; */
+    }
+
+    #fourth{
+        top: 530vh;
+        height: 200vh;
+    }
+
+    #fnav{
+        /* background-color: #fff; */
+        height: 5%;
+    }
+
+    #fnavtext{
+        font-size: 13px;
+    }
+
+    #fimgs{
+        /* background-color: rgb(22, 189, 22); */
+        flex-direction: column;
+        height: 95%;
+    }
+
+    .fimg{
+        width: 65vw;
+        height: 20%;
+    }
+
+    .fimg:hover{
+        width: 85vw;
+        height: 37%;
+    }
+
+    #fifth{
+        top: 730vh;
+        height: 200vh;
+    }
+
+    #fifthnav{
+        height: 8%;
+        /* background-color: black; */
+    }
+
+    #fifthnavtext{
+        font-size: 13px;
+    }
+
+    #fifthimgs{
+        position: absolute;
+        /* background-color: rgb(22, 189, 22); */
+        flex-direction: column;
+        height: 90%;
+        top: 8%;
+    }
+
+    .fifthimg{
+        width: 65vw;
+        height: 20%;
+    }
+
+    .fifthimg:hover{
+        width: 85vw;
+        height: 37%;
+    }
+
+    #sixth{
+        top: 930vh;
+        height: 250vh;
+    }
+
+    #sixthnav{
+        height: 8%;
+        background-color: black;
+    }
+
+    #sixthnavtext{
+        font-size: 16px;
+    }
+
+    #sixthimg{
+        width: 90vw;
+        position: absolute;
+        height: 90%;
+        /* background-color: lawngreen; */
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: solid 3px black;
+    }
+
+    #sixtext{
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 140px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    #sixthfooter{
+        font-size: 12px;
+        bottom: 10px;
+    }
+}
